@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
+<html lang = "en">
+	{% include header.html %}
 	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-		        <li><a href="/about">About</a></li>
-	        	<li><a href="/cv">CV</a></li>
-	        	<li><a href="/blog">Blog</a></li>
-	        </ul>
-	    </nav>
-	    <div class = "container">
-	    	{{ content}}
-	    </div><!-- /.container -->
-	    <footer>
-	    	<ul>
-	    		<li><a href="mailto:rsg169@msstate.edu">email</a></li>
-	    		<li><a href="https://github.com/RogerSGarcia">github.com/RogerSGarcia</a></li>
-			</ul>
-		</footer>
+	    <div class = "container ">
+			<div class="header clearfix">
+				<nav>
+					<ul class="nav nav-pills float-right">
+			  			{% include navpages %}
+					</ul>
+				</nav>
+				<h3 class="text-muted"><a href = "/">Roger That!</a></h3>
+			</div>
+    		{{ content}}
+	    {% include footer.html %}
+	    </div>
 	</body>
 </html>

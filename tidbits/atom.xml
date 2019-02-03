@@ -4,11 +4,11 @@ layout: feed
 <?xml version = "1.0" encoding = "utf-8"?>
 <feed xmlns = "http://www.w3.org/2005/Atom">
 
-	<title>RogerSGarcia's Blog</title>
-	<link href="http://RogerSGarcia.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://RogerSGarcia.github.io/blog"/>
+	<title>Roger's Tidbits</title>
+	<link href="http://RogerSGarcia.github.io/tidbits/atom.xml" rel="self"/>
+	<link href="http://RogerSGarcia.github.io/tidbits"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://RogerSGarcia.github.io/blog</id>
+	<id>http://RogerSGarcia.github.io/tidbits</id>
 	<author>
 		<name>Roger Garcia</name>
 	</author>

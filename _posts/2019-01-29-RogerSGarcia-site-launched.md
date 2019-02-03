@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Roger Garcia, Launch Site"
+title: "Launch Site"
 date: 2019-01-29
 ---
 

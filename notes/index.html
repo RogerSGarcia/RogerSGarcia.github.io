@@ -1,0 +1,12 @@
+---
+title: "Notes"
+layout: note
+---
+	<h4>{{ page.title}}</h4>
+
+	<ul class = "notes">
+		{% for note in site.notes %}
+		<li><span>{{ note.nn}}</span> >>
+			<a href="{{ note.url }} " title = "{{ note.title }}">{{ note.title }}</a></li>
+		{% endfor %}
+	</ul>

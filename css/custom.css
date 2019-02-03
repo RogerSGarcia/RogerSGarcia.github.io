@@ -1,0 +1,43 @@
+h3.text-muted a {
+    text-decoration: none;
+    color: #999999;
+}
+
+h3.text-muted a:hover,
+h3.text-muted a:active {
+    text-decoration: none;
+    color: #0088cc;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #ffffff;
+    background-color: #428bca;
+}
+
+
+ul.ul-edu li .description p.institution {
+    font-size: 0.75rem;
+    color: rgba(0,0,0,0.6);
+}
+ul.ul-edu li .description p {
+    margin: 0;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
