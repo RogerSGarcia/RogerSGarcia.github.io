@@ -41,3 +41,10 @@ ul.ul-edu li .description p {
   text-decoration: none;
 }
 
+figure {
+  display: inline-flex;
+}
+figcaption {
+  display: table-caption;
+  caption-side: top;
+}
