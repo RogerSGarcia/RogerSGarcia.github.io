@@ -48,3 +48,14 @@ figcaption {
   display: table-caption;
   caption-side: top;
 }
+
+
+.btn-default {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.pull-right {
+    float: right !important;
+}
