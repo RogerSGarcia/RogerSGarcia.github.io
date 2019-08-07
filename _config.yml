@@ -4,6 +4,7 @@ name: Roger Garcia, Personal Website
 # Build settings
 markdown: kramdown
 permalink: /tidbits/:year/:month/:day/:title
+highlighter: rouge
 
 collections:
   notes:
