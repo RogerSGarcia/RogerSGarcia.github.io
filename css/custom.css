@@ -87,3 +87,9 @@ figcaption {
 .sample .redtext {
     color: #880000;
 }
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
