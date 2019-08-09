@@ -4,6 +4,9 @@ title: "Git it, Don't Forget It !"
 date: 2019-08-08
 ---
 
+<h1 class="display-4">Git It, Don't Forget It</h1>
+
+
 Getting started with Git? or if your familiar with working with Git, then you know it's always useful to bookmark or write down common Git commands. This tidbit is an effort to share (and as a reference for myself) common Git commands and some awesome resources I've come across so far.
 
 
@@ -13,10 +16,10 @@ Git is a version control tool, you install it locally (e.g <code>apt-get install
 
 <hr />
 
-<h3 id="passing-a-copy--cvmat">Status, Branch, Checkout.</h3>
+<h3>Status, Branch, Checkout.</h3>
 <p>Common if not the most common git commands likely to be used.</p>
 
-<h3 id="passing-a-copy--cvmat"> <code class="highlighter-rouge">What's the situation</code>.</h3>
+<h3> <code>What's the situation</code>.</h3>
 <pre class="sample"><code>$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -38,7 +41,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a") </code></pre>
 
 
-<h3> <code class="highlighter-rouge">Show me all branches</code>.</h3>
+<h3> <code >Show me all branches</code>.</h3>
 <pre class="sample"><code>$ git branch -a
 <span class="yellowtext">* master</span>
   <span class ="redtext">rremotes/origin/HEAD</span> -> origin/master
@@ -46,7 +49,7 @@ no changes added to commit (use "git add" and/or "git commit -a") </code></pre>
 
 
 
-<h3> <code class="highlighter-rouge">Checkout a new local branch</code>.</h3>
+<h3> <code >Checkout a new local branch</code>.</h3>
 In general, it is bad practice to always be pushing code to <code>master</code> branch, the great thing about git/github is that we can work on different hunks/issues of a project to then update the overall status of the project (or push) to <code>master</code>. I'm no exception so it's time I create a <code>dev</code> branch.
 <pre class="sample"><code>$ git checkout -b dev
 M _config.yml
@@ -56,9 +59,9 @@ Switched to a new branch 'dev'
 </code></pre>
 
 <hr />
-<h3 id="passing-a-copy--cvmat">Diff, Add, Commit, Push.</h3>
+<h3>Diff, Add, Commit, Push.</h3>
 
-<h3> <code class="highlighter-rouge">What's change</code>.</h3>
+<h3> <code >What's change</code>.</h3>
 <pre class="sample"><code>$ git diff _config.yml
 diff --git a/_config.yml b/_config.yml
 index 55f510a..27b9c67 100644
@@ -74,7 +77,7 @@ index 55f510a..27b9c67 100644
    notes:
 </code></pre>
 
-<h3> <code class="highlighter-rouge">Add all tracked files</code>.</h3>
+<h3> <code >Add all tracked files</code>.</h3>
 <p>Use <code>git add -u</code> or <code>git add -up</code> to interactively choose hunks which to add</p>
 
 <pre class="sample"><code>$ git status
@@ -94,14 +97,14 @@ Untracked files:
 </code></pre>
 
 
-<h3> <code class="highlighter-rouge">Commit changes</code>.</h3>
+<h3> <code >Commit changes</code>.</h3>
 <pre class="sample"><code>$ git commit -m "initial commit" -m "updates to yaml file, css file and bio"
 [dev b2ecb59] initial commit
  3 files changed, 30 insertions(+), 1 deletion(-)
 </code></pre>
 
 
-<h3> <code class="highlighter-rouge">Push to remote branch</code>.</h3>
+<h3> <code >Push to remote branch</code>.</h3>
 Since we haven't set upstream we can do it during the push
 <pre class="sample"><code>$ git push -u origin dev
 Counting objects: 6, done.
@@ -120,7 +123,7 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 </code></pre>
 
 
-<h3> <code class="highlighter-rouge">Show me commits on current branch</code>.</h3>
+<h3> <code >Show me commits on current branch</code>.</h3>
 <pre class="sample"><code>$ git log</code></pre>
 
 <pre class = "sample"><code>$ git log --all --decorate --oneline --graph
@@ -154,7 +157,7 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 
 <p>If I want changes from <code>dev</code> to go onto <code>master</code>, I want to be in the <code>master</code> branch before I merge. In other words, to determine merge direction go to branch that "knows" less and <code>merge</code> or bring that knowledge over there! and hope there's no conflicts (more on that later)</p>
 
-<h3> <code class="highlighter-rouge">Pass on the knowledge by merging</code>.</h3>
+<h3> <code >Pass on the knowledge by merging</code>.</h3>
 <pre class="sample"><code>$ git checkout master
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
@@ -201,11 +204,11 @@ nothing to commit, working tree clean
 <h3>Prune and Cleanup.</h3>
 <p>Different variations of commands to prune/clean local branches.</p>
 
-<h3> <code class="highlighter-rouge">Show me what branches can be pruned</code>.</h3>
+<h3> <code >Show me what branches can be pruned</code>.</h3>
 <p>To actually remove, same command but remove <code>--dry-run</code></p>
 <pre class="sample"><code>$ git remote prune origin --dry-run</code></pre>
 
-<h3> <code class="highlighter-rouge">Synchronize local branches to remote</code>.</h3>
+<h3> <code >Synchronize local branches to remote</code>.</h3>
 <p>At times, others on the team will update/merge branches and <code>git pull</code> won't remove those lagging local branches,
 run the following command to list which are "gone": </p>
 
