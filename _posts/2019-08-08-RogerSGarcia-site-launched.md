@@ -154,9 +154,8 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 
 <p>If I want changes from <code>dev</code> to go onto <code>master</code>, I want to be in the <code>master</code> branch before I merge. In other words, to determine merge direction go to branch that "knows" less and <code>merge</code> or bring that knowledge over there! and hope there's no conflicts (more on that later)</p>
 
-<h3> <code class="highlighter-rouge">Show me what branches can be pruned</code>.</h3>
-<p>To actually remove, same command but remove <code>--dry-run</code></p>
-<pre class="sample"><code>$ git remote prune origin --dry-run</code></pre>
+<h3> <code class="highlighter-rouge">Pass on the knowledge by merging</code>.</h3>
+<pre class="sample"><code>$ git checkout master</code></pre>
 
 <hr />
 
