@@ -155,7 +155,45 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 <p>If I want changes from <code>dev</code> to go onto <code>master</code>, I want to be in the <code>master</code> branch before I merge. In other words, to determine merge direction go to branch that "knows" less and <code>merge</code> or bring that knowledge over there! and hope there's no conflicts (more on that later)</p>
 
 <h3> <code class="highlighter-rouge">Pass on the knowledge by merging</code>.</h3>
-<pre class="sample"><code>$ git checkout master</code></pre>
+<pre class="sample"><code>$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+</code></pre>
+<pre class="sample"><code>$ git pull
+Already up to date.
+$ git merge dev
+Updating 8fba3c1..9011021
+Fast-forward
+ _config.yml                                     |   1 <span class="yellowtext">+</span>
+ _posts/2019-08-08-RogerSGarcia-site-launched.md | 198 <span class="yellowtext">++++++++++++++++++++++++++++++++++++++++++++++++++</span>
+ css/custom.css                                  |  34 <span class="yellowtext">+++++++++</span>
+ images/gitnotgithub-200x400px.png               | Bin 0 -> <span class="yellowtext">20448</span> bytes
+ index.html                                      |   2 <span class="yellowtext">+</span><span class="redtext">-</span>
+ 5 files changed, 234 insertions(+), 1 deletion(-)
+ create mode 100644 _posts/2019-08-08-RogerSGarcia-site-launched.md
+ create mode 100644 images/gitnotgithub-200x400px.png
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+$ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:RogerSGarcia/RogerSGarcia.github.io.git
+   8fba3c1..9011021  master -> master
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+</code></pre>
 
 <hr />
 
