@@ -87,6 +87,15 @@ figcaption {
 .sample .redtext {
     color: #880000;
 }
+.sample .dirtext{
+  color: #4444CC;
+}
+.sample .exetext{
+  color: #44CC44;
+}
+.sample .scantext{
+  color: #CC44CC;
+}
 
 .center-image
 {
