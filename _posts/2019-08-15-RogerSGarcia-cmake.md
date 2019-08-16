@@ -7,10 +7,7 @@ date: 2019-08-15
 
 <h1 class="display-4">Thanks to CMake...</h1>
 
-
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"cmake","geo":"","time":"2004-01-01 2019-08-15"},{"keyword":"autoconf","geo":"","time":"2004-01-01 2019-08-15"},{"keyword":"scons","geo":"","time":"2004-01-01 2019-08-15"},{"keyword":"automake","geo":"","time":"2004-01-01 2019-08-15"},{"keyword":"qmake","geo":"","time":"2004-01-01 2019-08-15"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=cmake,autoconf,scons,automake,qmake","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-
-
+{% include thankstocmake_graph.html %}
 
 <h3>Less from Make (Makefiles) </h3>
 Cmake was created in an effort to reduce the laborious effort that goes into writing lines of code for Makefiles. It's perhaps not evident until working with larger projects, but it's always valuable to work through a <code>Hello World</code>.
