@@ -5,6 +5,7 @@ name: Roger Garcia, Personal Website
 markdown: kramdown
 permalink: /tidbits/:year/:month/:day/:title
 highlighter: rouge
+future: true
 
 collections:
   notes:
