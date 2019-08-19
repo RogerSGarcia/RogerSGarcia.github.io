@@ -3,11 +3,11 @@ layout: post
 title: "Thanks to CMake..."
 date: 2019-08-15
 htmlwidgets: true
+revised: true
+last_updated: 2019-08-19
 ---
 
-
 <h1 class="display-4">Thanks to CMake...</h1>
-
 {% include thankstocmake_graph.html %}
 
 <center>
@@ -79,7 +79,7 @@ rm hello.out
 
 <p>Compile program using <code>cmake</code>. In general, you have a <code>CMakeLists.txt</code> file which contains commands that will generate our <code>Makefile</code>, this then allows us to invoke <code>make</code> like in the previous example (Awesome).</p>
 
-<p>This may be old news to you if your frequently working with code, in particuarly C/C++, but I think it's pretty cool, despite different git-repositories/projects/libraries/ there's a common practice where the source code is saved and how you build your project using <code>cmake</code>:</p>
+<p>This may be old news to you if your frequently working with code, in particuarly C/C++, but it's pretty cool, despite different git-repositories/projects/libraries/ there's a common practice where source files are located and how you build your project using <code>cmake</code>:</p>
 
 <dl class="row">
     <dt class="col-sm-3">src</dt>

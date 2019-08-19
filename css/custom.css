@@ -109,5 +109,8 @@ widgetcaption{
   font-style: italic;
   font-size: small;
   line-height: 2.5em;
-
+}
+revised{
+  color: #6c757d;
+  font-size: small;
 }

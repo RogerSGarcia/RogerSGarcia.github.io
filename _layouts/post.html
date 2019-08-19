@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<p class = "meta">{{ page.date | date_to_string }}</p>
+<p class = "meta">{{ page.date | date_to_string }}
+{% if page.revised %}
+<br>
+<revised>Last updated on: {{ page.last_updated | date_to_string }}</revised>
+{% endif %}
+</p>
 
 <div class = "post">
 	{{ content }}
