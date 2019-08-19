@@ -10,6 +10,12 @@ htmlwidgets: true
 
 {% include thankstocmake_graph.html %}
 
+<center>
+<widgetcaption>(Source: Google Trends <a href="https://trends.google.com/trends/explore?date=all&q=cmake,autoconf,scons,automake,qmake">Data</a>)</widgetcaption>
+</center>
+
+<hr/>
+
 <h3>Less from Make (Makefiles) </h3>
 Cmake was created in an effort to reduce the laborious effort that goes into writing lines of code for Makefiles. It's perhaps not evident until working with larger projects, but it's always valuable to work through a <code>Hello World</code>.
 

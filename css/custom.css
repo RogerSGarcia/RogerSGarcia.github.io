@@ -102,3 +102,12 @@ figcaption {
     margin: 0 auto;
     display: block;
 }
+
+widgetcaption{
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  font-size: small;
+  line-height: 2.5em;
+
+}
