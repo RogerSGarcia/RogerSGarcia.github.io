@@ -5,10 +5,11 @@ date: 2019-08-15
 htmlwidgets: true
 author: RogerSGarcia
 revised: true
-image: "/images/gitnotgithub-200x400x.png"
+image: "/images/p_cmake.png"
 last_updated: 2019-08-19
 
 ---
+
 
 {% include thankstocmake_graph.html %}
 
