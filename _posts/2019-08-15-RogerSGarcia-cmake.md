@@ -3,11 +3,13 @@ layout: post
 title: "Thanks to CMake..."
 date: 2019-08-15
 htmlwidgets: true
+author: RogerSGarcia
 revised: true
+image: "/images/gitnotgithub-200x400x.png"
 last_updated: 2019-08-19
+
 ---
 
-<h1 class="display-4">Thanks to CMake...</h1>
 {% include thankstocmake_graph.html %}
 
 <center>
