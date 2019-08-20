@@ -10,7 +10,6 @@ last_updated: 2019-08-19
 
 ---
 
-
 {% include thankstocmake_graph.html %}
 
 <center>
