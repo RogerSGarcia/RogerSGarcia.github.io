@@ -7,6 +7,7 @@ author: RogerSGarcia
 revised: true
 image: "/images/p_cmake.png"
 last_updated: 2019-08-19
+description: "Cmake was created in an effort to reduce the laborious effort that goes into writing lines of code for Makefiles. It's perhaps not evident until working with larger projects, but it's always valuable to work through a <code>Hello World</code>."
 
 ---
 

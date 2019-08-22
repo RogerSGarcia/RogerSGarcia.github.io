@@ -3,6 +3,8 @@ layout: post
 title: "Git it, Don't Forget It !"
 date: 2019-08-08
 author: RogerSGarcia
+image: "/images/gitnotgithub-200x400px.png"
+description: "Getting started with Git? or if your familiar with working with Git, then you know it's always useful to bookmark or write down common Git commands. This tidbit is an effort to share (and as a reference for myself) common Git commands and some awesome resources I've come across so far."
 ---
 
 
